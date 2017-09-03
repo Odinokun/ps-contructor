@@ -1,4 +1,4 @@
-.sec-6 {
+.sec-06 {
   background-image: url('../img/bg-space.jpg');
   background-position: 50% 100%;
   background-size: cover;
@@ -11,7 +11,7 @@
     &::before {
       position: absolute;
       bottom: -200px;
-      left: calc(50% + 130px);
+      left: calc(50% + 150px);
       width: 77px;
       height: 137px;
       content: '';
@@ -28,10 +28,11 @@
     }
   }
 }
-.sec-6__title {
+.sec-06__title {
   font-family: $font-semibold;
   font-size: 48px;
   margin-bottom: 30px;
+  line-height: 1;
   letter-spacing: .48;
   text-transform: uppercase;
   color: #fff;
