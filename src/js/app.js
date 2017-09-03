@@ -28,8 +28,8 @@ $(function() {
   // end   Sticky header
 
   // begin Animate.css
-  // require('./modules/waypoints')();
-  // require('./modules/animateCss')();
+  require('./modules/waypoints')();
+  require('./modules/animateCss')();
   // end   Animate.css
 
   // begin Fancybox3

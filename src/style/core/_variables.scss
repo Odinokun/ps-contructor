@@ -1,13 +1,11 @@
 // ***** main colors *******
-$brand: #00407a;
-$brand-hov: #013a6e;
+$brand: #042342;
 
-$highlight: #751540;
-$highlight-hov: #59233b;
+$highlight: #62e0ff;
 
 // ***** text colors *******
-$text: #646464;
-$title: #141414;
+$text: #363636;
+$title: #042342;
 
 $link-color: $brand;
 $link-color-hov: $highlight;
@@ -15,8 +13,9 @@ $link-color-hov: $highlight;
 // ===== fonts =====
 $font:            'OpenSans', sans-serif;
 $font-bold:       'OpenSans-Bold', sans-serif;
-$font-light:      'OpenSans-Light', sans-serif;
 $font-semibold:   'OpenSans-Semibold', sans-serif;
+$font-black:      'Akrobat-Black', sans-serif;
+$font-extrabold:  'Akrobat-ExtraBold', sans-serif;
 
 // ===== sizes =====
 $radius-button: 5px;

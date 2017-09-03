@@ -7,14 +7,6 @@
 }
 
 @font-face {
-  font-family: OpenSans-Light;
-  src:  url('../fonts/OpenSans-Light.woff2') format('woff2'),
-        url('../fonts/OpenSans-Light.woff')  format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: OpenSans-Bold;
   src:  url('../fonts/OpenSans-Bold.woff2') format('woff2'),
         url('../fonts/OpenSans-Bold.woff')  format('woff');
@@ -26,6 +18,22 @@
   font-family: OpenSans-Semibold;
   src:  url('../fonts/OpenSans-Semibold.woff2') format('woff2'),
         url('../fonts/OpenSans-Semibold.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Akrobat-Black;
+  src:  url('../fonts/Akrobat-Black.woff2') format('woff2'),
+        url('../fonts/Akrobat-Black.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Akrobat-ExtraBold;
+  src:  url('../fonts/Akrobat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Akrobat-ExtraBold.woff')  format('woff');
   font-weight: 400;
   font-style: normal;
 }

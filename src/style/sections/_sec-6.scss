@@ -1,0 +1,42 @@
+.sec-6 {
+  background-image: url('../img/bg-space.jpg');
+  background-position: 50% 100%;
+  background-size: cover;
+  .container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    text-align: center;
+    &::before {
+      position: absolute;
+      bottom: -200px;
+      left: calc(50% + 130px);
+      width: 77px;
+      height: 137px;
+      content: '';
+      transition: bottom .5s;
+      background-image: url('../img/sec6-mem.png');
+      background-position: 50% 100%;
+      background-size: contain;
+    }
+    &:hover,
+    &.active {
+      &::before {
+        bottom: -20px;
+      }
+    }
+  }
+}
+.sec-6__title {
+  font-family: $font-semibold;
+  font-size: 48px;
+  margin-bottom: 30px;
+  letter-spacing: .48;
+  text-transform: uppercase;
+  color: #fff;
+  span {
+    display: block;
+    color: $highlight;
+  }
+}
