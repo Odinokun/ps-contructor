@@ -21,13 +21,13 @@
 .sec-05__item-list {
   display: flex;
 }
-.sec5__item {
+.sec-05__item {
   width: 33.3333%;
   display: flex;
   text-align: left;
   margin-bottom: 20px;
 }
-.sec5__item-icon {
+.sec-05__item-icon {
   flex: none;
   width: 64px;
   img {
@@ -35,7 +35,7 @@
     width: 100%;
   }
 }
-.sec5__item-text {
+.sec-05__item-text {
   padding: 15px 15px 0px 15px;
   p {
     font-size: 14px;
@@ -43,7 +43,7 @@
     color: #000;
   }
 }
-.sec5__item-title {
+.sec-05__item-title {
   font-family: $font-bold;
   font-size: 18px;
   text-transform: uppercase;
