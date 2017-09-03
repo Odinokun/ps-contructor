@@ -1,0 +1,60 @@
+.sec-03 {
+  background-color: #fff;
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+.sec-03__title {
+  line-height: 1;
+  text-transform: uppercase;
+  color: $title;
+}
+.sec-03__title-01 {
+  font-family: $font-extrabold;
+  font-size: 60px;
+  margin-bottom: 0;
+  letter-spacing: .3;
+}
+.sec-03__title-02 {
+  font-family: $font-extrabold;
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+.sec-03__title-03 {
+  font-family: $font-extrabold;
+  font-size: 41px;
+  margin-bottom: 10px;
+}
+.sec-03__title-04 {
+  font-family: $font-black;
+  font-size: 101px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  &::before {
+    top: 0;
+    bottom: 0;
+    left: -80px;
+    width: 77px;
+    height: 40px;
+    margin: auto;
+    background-image: url('../img/key-01.png');
+  }
+  &::after {
+    top: 10px;
+    right: -90px;
+    width: 87px;
+    height: 90px;
+    background-image: url('../img/key-02.png');
+  }
+}
