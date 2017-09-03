@@ -1,0 +1,127 @@
+.sec-02 {
+  background-color: #fff;
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+.sec-02__title {
+  font-family: $font-bold;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: .3;
+  text-transform: uppercase;
+  color: $title;
+}
+.sec-02__subtitle {
+  font-family: $font-semibold;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 30px;
+  letter-spacing: .2;
+  text-transform: uppercase;
+  color: $title;
+}
+.sec-02__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 755px;
+  margin: 0 auto ;
+  input {
+    font-size: 14px;
+    width: 100%;
+    max-width: 230px;
+    margin-bottom: 20px;
+    border: 1px solid $text;
+    outline: none;
+
+    @include placeholder-color($text);
+    &:focus {
+      border: 1px solid $highlight;
+    }
+  }
+  .btn-sm {
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    border: 1px solid $highlight;
+  }
+}
+.sec-02__banner-wrap {
+  position: relative;
+  width: 672px;
+  min-height: 210px;
+  margin: 0 auto 30px;
+  box-shadow: 10px 10px 20px 0 rgba(98,224,255,.43);
+}
+.sec-02__banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 35px 10px;
+  background-image: url('../img/sec-02-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+}
+.sec-02__banner-cash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 487px;
+  height: 200px;
+  margin: auto;
+  transition: right .5s;
+  background-image: url('../img/cash.png');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: contain;
+  &.active {
+    right: -140px;
+  }
+}
+.sec-02__banner-title {
+  font-family: $font-bold;
+  font-size: 24px;
+  line-height: 1.2;
+  width: 285px;
+  margin: 0;
+  text-transform: uppercase;
+  color: $title;
+  span {
+    font-size: 48px;
+    display: block;
+  }
+}
+.sec-02__banner-sicker {
+  font-family: $font-bold;
+  font-size: 16px;
+  line-height: 1;
+  position: absolute;
+  top: 50px;
+  right: 265px;
+  text-transform: uppercase;
+  color: $title;
+  span {
+    font-size: 72px;
+  }
+}
+
+
+
+.sec-02__title-lg {
+  font-family: $font-bold;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 20px;
+  letter-spacing: .36;
+  text-transform: uppercase;
+  color: $title;
+}

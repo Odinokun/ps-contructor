@@ -27,3 +27,13 @@ function pageWidget(pages) {
 
 
 //====== Begin Programmer code ======
+$(window).scroll(function(){
+  var target = $('#sec-02');
+  var targetPos = target.offset().top;
+  var winHeight = $(window).height();
+  var scrollToElem = targetPos - winHeight;
+  var winScrollTop = $(this).scrollTop();
+  if(winScrollTop > scrollToElem){
+    $('#sec-02 .sec-02__banner-cash').addClass('active');
+  }
+});
