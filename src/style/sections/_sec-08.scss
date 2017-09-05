@@ -1,0 +1,136 @@
+.sec-08 {
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  .container {
+    position: relative;
+  }
+}
+.sec-08__string {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  display: block;
+  width: 1920px;
+  margin: auto;
+  transform: translateX(-50%);
+}
+// begin animation
+@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-2 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// end animation
+.sec-08__planet {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+}
+.sec-08__planet-01 {
+  top: 20px;
+  left: -200px;
+  animation: rotate 60s linear infinite;
+}
+.sec-08__planet-02 {
+  top: 110px;
+  right: -135px;
+  animation: rotate-2 100s linear infinite;
+}
+.sec-08__planet-03 {
+  top: 270px;
+  left: -170px;
+  animation: rotate 80s linear infinite;
+}
+.sec-08__item {
+  position: absolute;
+  width: 280px;
+  text-align: center;
+}
+.sec-08__item-01 {
+  top: 40px;
+  left: 0;
+}
+.sec-08__item-02 {
+  top: 40px;
+  right: 0;
+}
+.sec-08__item-03 {
+  top: 40px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.sec-08__item-04 {
+  top: 212px;
+  left: 150px;
+}
+.sec-08__item-05 {
+  top: 212px;
+  right: 150px;
+}
+.sec-08__item-title {
+  font-size: 24px;
+  line-height: 1;
+  position: relative;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+  color: #fff;
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: -37px;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    background-color: $highlight;
+  }
+}
+.sec-08__item-text {
+  p {
+    font-size: 12px;
+    color: #fff;
+  }
+}
+.sec-08__slogan {
+  position: absolute;
+  top: 380px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.sec-08__slogan-title {
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+.btn-sm.sec-08__btn {
+  margin: 0 20px;
+  cursor: pointer;
+}
+.sec-08__rocket {
+  transition: 5s;
+  img {
+    display: block;
+  }
+  &.active {
+    margin-right: -4000px;
+    margin-left: 4000px;
+  }
+}

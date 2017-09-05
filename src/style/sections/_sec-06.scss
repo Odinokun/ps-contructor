@@ -1,7 +1,11 @@
 .sec-06 {
-  background-image: url('../img/bg-space.jpg');
   background-position: 50% 100%;
   background-size: cover;
+  &:hover {
+    .container::before {
+      bottom: -20px;
+    }
+  }
   .container {
     position: relative;
     overflow: hidden;
@@ -20,19 +24,13 @@
       background-position: 50% 100%;
       background-size: contain;
     }
-    &:hover,
-    &.active {
-      &::before {
-        bottom: -20px;
-      }
-    }
   }
 }
 .sec-06__title {
   font-family: $font-semibold;
   font-size: 48px;
-  margin-bottom: 30px;
   line-height: 1;
+  margin-bottom: 30px;
   letter-spacing: .48;
   text-transform: uppercase;
   color: #fff;

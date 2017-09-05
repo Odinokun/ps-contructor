@@ -1,0 +1,82 @@
+.header {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  left: 0;
+  padding: 5px 0;
+  transition: 1s;
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &.active {
+    transition: 1s;
+    background: #022f53;
+  }
+}
+
+
+// ===== logo =====
+.header__logo {
+  width: 190px;
+  margin-right: auto;
+}
+.header__logo-pic {
+  display: block;
+  max-width: 100%;
+  max-height: 55px;
+}
+
+// ===== adress =====
+.header__adress {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 25px 0 10px;
+  letter-spacing: .35px;
+  color: #fff;
+  text-align: right;
+}
+.header__adress-phone a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+// ===== btn =====
+.header__btn-link {
+  font-family: $font-bold;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 30px;
+  transition: .5s;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border: 2px solid $highlight;
+  background-color: transparent;
+  &:hover {
+    transition: .5s;
+    color: $brand;
+    background-color: $highlight;
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+//     .header {
+//         position: relative;
+//         background-color: $brand-dark !important;
+//         .container {
+//             padding: 0;
+//         }
+//     }
+//     .header__logo {
+//         position: absolute;
+//         z-index: 10;
+//         top: 15px;
+//         left: 30px;
+//     }
+//     .header__logo-pic {
+//         max-height: 30px;
+//     }
+// }

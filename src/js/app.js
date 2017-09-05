@@ -23,9 +23,9 @@ $(function() {
   // require('./modules/popup')();
   // end   Popup
 
-  // begin Sticky header
-  // require('./modules/stickyHeader')();
-  // end   Sticky header
+  // begin background color header to scroll
+  require('./modules/headerColor')();
+  // end   background color header to scroll
 
   // begin Animate.css
   require('./modules/waypoints')();

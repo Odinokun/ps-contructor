@@ -1,0 +1,20 @@
+.sec-08-before-before {
+  background-color: #fff;
+}
+.sec-08-before__title,
+.sec-08-before__subtitle {
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: $brand;
+}
+.sec-08-before__title {
+  font-family: $font-bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.sec-08-before__subtitle {
+  font-family: $font-semibold;
+  font-size: 18px;
+  margin-bottom: 50px;
+}

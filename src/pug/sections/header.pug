@@ -1,4 +1,16 @@
 // begin header
-header.header
-  h1 header
+header#header.header
+  .container
+    .header__logo
+      a(href='#')
+        img.header__logo-pic(src='assets/img/header-logo.png', alt='company logo')
+    .header__adress
+      .header__adress-city
+        | Санкт-Петербург
+      .header__adress-phone
+        a(href='tel:+7 (812) 309-29-98') +7 (812) 309-29-98
+    .header__btn
+      button.header__btn-link
+        | Оставить заявку
+
 // end   header
