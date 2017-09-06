@@ -1,0 +1,121 @@
+.sec-10 {
+  background-color: #fff;
+  .container {
+    overflow: visible;
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+.sec-10__title,
+.sec-10__subtitle {
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: $brand;
+}
+.sec-10__title {
+  font-family: $font-bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+  span {
+    color: $highlight;
+  }
+}
+.sec-10__subtitle {
+  font-family: $font-semibold;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.sec-10__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+  padding-left: 300px;
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -200px;
+    width: 430px;
+    height: 450px;
+    margin: auto;
+    content: '';
+    background-image: url('../img/sec-10.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: contain;
+  }
+}
+.sec-10__body-list {
+  margin: 0;
+  padding: 0;
+  li {
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 0 0 70px;
+    list-style: none;
+    color: $brand;
+    span {
+      font-family: $font-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    &:nth-child(1)::before {
+      background-image: url('../img/icons/sec-10-01.png');
+    }
+    &:nth-child(2)::before {
+      background-image: url('../img/icons/sec-10-02.png');
+    }
+    &:nth-child(3)::before {
+      background-image: url('../img/icons/sec-10-03.png');
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 46px;
+      content: '';
+    }
+  }
+}
+.sec-10__callme {
+  display: flex;
+  flex-direction: column;
+  width: 495px;
+  height: 150px;
+  background-image: url('../img/sec-10-callme.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: contain;
+}
+.sec-10__callme-title {
+  font-family: $font-bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $brand;
+}
+.sec-10__callme-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.sec-10__callme-phone {
+  text-align: right;
+    font-family: $font-semibold;
+  font-size: 30px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: $brand;
+}
+.sec-10__callme-footer {
+  font-family: $font-bold;
+  font-size: 18px;
+  margin: auto 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $brand;
+}
