@@ -16,6 +16,7 @@ module.exports = function() {
 
   //animate effect
   $(".section__item").animated("zoomIn", "fadeOut");
+  $(".sec-03__title").animated("jackInTheBox", "fadeOut");
   // end   Animate CSS + WayPoints javaScript Plugin
 
 };
