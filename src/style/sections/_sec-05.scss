@@ -14,6 +14,7 @@
   letter-spacing: .3;
   text-transform: uppercase;
   color: $title;
+
   @include max(680) {
     font-size: 24px;
   }
@@ -23,14 +24,15 @@
 }
 .sec-05__item-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .sec-05__item {
-  width: 33.3333%;
   display: flex;
-  text-align: left;
+  width: 33.3333%;
   margin-bottom: 20px;
+  text-align: left;
+
   @include max(880) {
     width: 50%;
   }
@@ -48,7 +50,7 @@
   }
 }
 .sec-05__item-text {
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 0 15px;
   p {
     font-size: 14px;
     letter-spacing: .35;
@@ -58,8 +60,8 @@
 .sec-05__item-title {
   font-family: $font-bold;
   font-size: 18px;
-  text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 20px;
+  text-transform: uppercase;
   color: #000;
 }

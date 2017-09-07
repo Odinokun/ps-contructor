@@ -23,6 +23,10 @@
       background-image: url('../img/sec6-mem.png');
       background-position: 50% 100%;
       background-size: contain;
+
+      @include max(490) {
+        display: none;
+      }
     }
   }
 }
@@ -34,6 +38,13 @@
   letter-spacing: .48;
   text-transform: uppercase;
   color: #fff;
+
+  @include max(680) {
+    font-size: 36px;
+  }
+  @include max(490) {
+    font-size: 30px;
+  }
   span {
     display: block;
     color: $highlight;
