@@ -14,6 +14,9 @@
   letter-spacing: .3;
   text-transform: uppercase;
   color: $title;
+  @include max(680) {
+    font-size: 24px;
+  }
 }
 .sec-02__subtitle {
   font-family: $font-semibold;
@@ -23,6 +26,9 @@
   letter-spacing: .2;
   text-transform: uppercase;
   color: $title;
+  @include max(680) {
+    font-size: 16px;
+  }
 }
 .sec-02__form {
   display: flex;
@@ -31,6 +37,10 @@
   width: 100%;
   max-width: 755px;
   margin: 0 auto ;
+
+  @include max(730) {
+    justify-content: center;
+  }
   input {
     font-size: 14px;
     width: 100%;
@@ -40,6 +50,13 @@
     outline: none;
 
     @include placeholder-color($text);
+    @include max(730) {
+      width: 45%;
+      margin: 0 10px 20px 10px;
+    }
+    @include max(460) {
+      width: 100%;
+    }
     &:focus {
       border: 1px solid $highlight;
     }
@@ -53,7 +70,8 @@
 }
 .sec-02__banner-wrap {
   position: relative;
-  width: 672px;
+  width: 100%;
+  max-width: 672px;
   min-height: 210px;
   margin: 0 auto 30px;
   box-shadow: 10px 10px 20px 0 rgba(98,224,255,.43);
@@ -69,6 +87,14 @@
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: cover;
+  @include max(680) {
+  background-image: url('../img/sec-02-banner-sm.jpg');
+background-repeat: repeat-x;
+background-position: 0 50%;
+background-size: auto 100%;
+display: flex;
+align-items: center;justify-content: space-around;
+  }
 }
 .sec-02__banner-cash {
   position: absolute;
@@ -83,6 +109,10 @@
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: contain;
+
+  @include max(960) {
+    display: none;
+  }
   &.active {
     right: -140px;
   }
@@ -105,10 +135,24 @@
   font-size: 16px;
   line-height: 1;
   position: absolute;
-  top: 50px;
-  right: 265px;
+  top: 30px;
+  right: 230px;
+  width: 145px;
+  height: 145px;
+  padding-top: 25px;
+  text-align: center;
   text-transform: uppercase;
   color: $title;
+  background-image: url('../img/sec-02-sticker.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  @include max(680) {
+     position: static;
+  }
+  @include max(460) {
+    display: none;
+  }
   span {
     font-size: 72px;
   }
@@ -121,4 +165,7 @@
   letter-spacing: .36;
   text-transform: uppercase;
   color: $title;
+  @include max(680) {
+    font-size: 30px;
+  }
 }
