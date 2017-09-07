@@ -25,10 +25,29 @@
   position: relative;
   min-height: 340px;
   margin-bottom: 20px;
+
+  @include max(1140) {
+    padding-right: 100px;
+  }
+  @include max(880) {
+    min-height: 0;
+    margin-bottom: 300px;
+    padding: 0;
+  }
+  @include max(540) {
+    margin-bottom: 220px;
+  }
+  @include max(375) {
+    margin-bottom: 150px;
+  }
 }
 .sec-07__item-header {
   padding: 12px 450px 12px 25px;
   background-color: $brand;
+
+  @include max(880) {
+    padding: 12px 25px;
+  }
 }
 .sec-07__item-title {
   font-family: $font-semibold;
@@ -40,6 +59,10 @@
 .sec-07__item-body {
   padding: 12px 450px 20px 25px;
   background-color: #00aeef;
+
+  @include max(880) {
+    padding: 15px 25px 50px 25px;
+  }
   p {
     font-size: 14px;
     display: inline-block;
@@ -67,17 +90,35 @@
   position: absolute;
   top: -20px;
   right: -90px;
+
+  @include max(1140) {
+    right: 0;
+  }
+  @include max(880) {
+    top: calc(100% - 40px);
+  }
+  @include max(640) {
+    left: 0;
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
   img {
     position: relative;
+
+    @include max(640) {
+      display: block;
+      width: 100%;
+    }
   }
 }
-.sec-07__item-pic-project {
-  position: absolute;
-  top: 10px;
-  right: 100px;
-  width: 405px;
-  height: 270px;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-}
+// .sec-07__item-pic-project {
+//   position: absolute;
+//   top: 10px;
+//   right: 100px;
+//   width: 405px;
+//   height: 270px;
+//   background-repeat: no-repeat;
+//   background-position: 50% 0;
+//   background-size: cover;
+// }
