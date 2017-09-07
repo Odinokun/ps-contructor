@@ -13,6 +13,7 @@
     height: 80px;
     content: '';
     background-color: #fff;
+
     @include max(460) {
       height: 50px;
     }
@@ -23,6 +24,7 @@
     flex-direction: column;
     min-height: 770px;
     padding-top: 130px;
+
     @include max(680) {
       min-height: 500px;
     }
@@ -41,30 +43,28 @@
 .sec-01__title {
   font-family: $font-bold;
   font-size: 38px;
-    @include max(680) {
-      font-size: 30px;
-    }
+
+  @include max(680) {
+    font-size: 30px;
+  }
 }
 .sec-01__subtitle {
   font-family: $font-semibold;
   font-size: 26px;
-    @include max(680) {
-      font-size: 20px;
-    }
+
+  @include max(680) {
+    font-size: 20px;
+  }
 }
 .sec-01__pic {
   z-index: 10;
   margin: auto auto -30px auto;
-    @include max(680) {
-      margin: auto;
-    }
+
+  @include max(680) {
+    margin: auto;
+  }
   img {
     display: block;
     width: 100%;
-    @include max(920) {
-      // width: 95%;
-      // display: block;
-      // margin: 0 auto;
-    }
   }
 }

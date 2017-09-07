@@ -15,6 +15,9 @@
   letter-spacing: .3;
   text-transform: uppercase;
   color: $title;
+  @include max(680) {
+    font-size: 24px;
+  }
   span {
     color: $highlight;
   }
@@ -28,6 +31,9 @@
   letter-spacing: .16;
   text-transform: uppercase;
   color: $title;
+  @include max(680) {
+    font-size: 14px;
+  }
 }
 .sec-04__item-list {
   display: flex;
@@ -38,6 +44,11 @@
   width: 50%;
   margin-bottom: 40px;
   text-align: left;
+  @include max(730) {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .sec-04__item-icon {
   flex: none;
@@ -59,6 +70,10 @@
 }
 .sec-04__item-text {
   padding: 22px 30px 0 0;
+  @include max(730) {
+  padding: 22px 0px 0 0;
+
+  }
   p {
     font-size: 14px;
     letter-spacing: .14;
@@ -72,4 +87,7 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   color: $title;
+  @include max(680) {
+    font-size: 20px;
+  }
 }
