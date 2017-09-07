@@ -14,18 +14,30 @@
   letter-spacing: .3;
   text-transform: uppercase;
   color: $title;
+  @include max(680) {
+    font-size: 24px;
+  }
   span {
     color: $highlight;
   }
 }
 .sec-05__item-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .sec-05__item {
   width: 33.3333%;
   display: flex;
   text-align: left;
   margin-bottom: 20px;
+  @include max(880) {
+    width: 50%;
+  }
+  @include max(680) {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 .sec-05__item-icon {
   flex: none;
