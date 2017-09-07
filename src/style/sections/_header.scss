@@ -36,6 +36,9 @@
   letter-spacing: .35px;
   color: #fff;
   text-align: right;
+  @include max(640) {
+    display: none;
+  }
 }
 .header__adress-phone a {
   font-size: 14px;
@@ -51,10 +54,16 @@
   padding: 10px 30px;
   transition: .5s;
   text-decoration: none;
+  white-space: nowrap;
   text-transform: uppercase;
   color: #fff;
   border: 2px solid $highlight;
   background-color: transparent;
+  @include max(460) {
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-left: 10px;
+  }
   &:hover {
     transition: .5s;
     color: $brand;

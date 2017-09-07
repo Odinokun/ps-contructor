@@ -9,6 +9,12 @@
     top: 250px;
     left: 250px;
     border: 0;
+    @include max(1200) {
+      left: -100px;
+    }
+    @include max(680) {
+      top: 0;
+    }
 }
 #sun {
     position: absolute;

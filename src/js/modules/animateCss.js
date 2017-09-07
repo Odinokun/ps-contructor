@@ -15,8 +15,13 @@ module.exports = function() {
   })(jQuery);
 
   //animate effect
-  $(".section__item").animated("zoomIn", "fadeOut");
-  $(".sec-03__title").animated("jackInTheBox", "fadeOut");
+  $(".sec-03").animated("zoomIn", "fadeOut");
+  $(".sec-04__item").animated("slideInUp", "fadeOut");
+  $(".sec-05__item").animated("slideInUp", "fadeOut");
+  $(".sec-10__body-list li").animated("slideInRight", "fadeOut");
+  $(".sec-10__callme").animated("slideInRight", "fadeOut");
+  $(".sec-11__item").animated("slideInUp", "fadeOut");
+  $(".sec-13__item").animated("slideInUp", "fadeOut");
   // end   Animate CSS + WayPoints javaScript Plugin
 
 };
