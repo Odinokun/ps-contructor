@@ -21,16 +21,23 @@
   font-size: 48px;
   margin-bottom: 20px;
   color: #fff;
+  @include max(680) {
+    font-size: 36px;
+  }
 }
 .sec-11__subtitle {
   font-size: 30px;
   margin-bottom: 20px;
   color: $highlight;
+  @include max(680) {
+    font-size: 24px;
+  }
 }
 .sec-11__list {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 .sec-11__item {
   display: flex;
@@ -40,6 +47,9 @@
   max-width: 200px;
   margin-bottom: 20px;
   text-align: center;
+  @include max(490) {
+    width: 45%;
+  }
 }
 .sec-11__item-numb {
   display: flex;
@@ -61,9 +71,12 @@
 .sec-11__item-text {
   font-family: $font-semibold;
   font-size: 24px;
-  line-height: 1;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #fff;
+  @include max(680) {
+    font-size: 20px;
+  }
 }
 .sec-11__form-title {
   font-family: $font-semibold;
@@ -73,6 +86,9 @@
   text-align: center;
   text-transform: uppercase;
   color: $highlight;
+  @include max(680) {
+    font-size: 24px;
+  }
 }
 .sec-11__form {
   display: flex;
@@ -81,6 +97,9 @@
   width: 100%;
   max-width: 700px;
   margin: 0 auto ;
+    @include max(680) {
+      justify-content: space-around;
+    }
   input {
     font-size: 14px;
     width: 30%;
@@ -89,6 +108,12 @@
     outline: none;
 
     @include placeholder-color($text);
+    @include max(680) {
+      width: 45%;
+    }
+    @include max(490) {
+      width: 90%;
+    }
     &:focus {
       border: 1px solid $highlight;
     }
