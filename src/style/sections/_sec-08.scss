@@ -5,8 +5,20 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+
+  @include max(900) {
+    min-height: 0;
+  }
   .container {
     position: relative;
+
+    @include max(900) {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 }
 .sec-08__string {
@@ -17,6 +29,10 @@
   width: 1920px;
   margin: auto;
   transform: translateX(-50%);
+
+  @include max(900) {
+    display: none;
+  }
 }
 // begin animation
 @keyframes rotate {
@@ -34,6 +50,10 @@
   position: absolute;
   width: 148px;
   height: 148px;
+
+  @include max(900) {
+    display: none;
+  }
 }
 .sec-08__planet-01 {
   top: 20px;
@@ -54,6 +74,18 @@
   position: absolute;
   width: 280px;
   text-align: center;
+
+  @include max(900) {
+    position: static;
+    width: 30%;
+    margin: 0 !important;
+  }
+  @include max(680) {
+    width: 47%;
+  }
+  @include max(460) {
+    width: 90%;
+  }
 }
 .sec-08__item-01 {
   top: 40px;
@@ -62,12 +94,12 @@
 .sec-08__item-02 {
   top: 40px;
   right: 0;
+  left: 0;
+  margin: auto;
 }
 .sec-08__item-03 {
   top: 40px;
   right: 0;
-  left: 0;
-  margin: auto;
 }
 .sec-08__item-04 {
   top: 212px;
@@ -84,6 +116,10 @@
   margin: 0 0 50px 0;
   text-transform: uppercase;
   color: #fff;
+
+  @include max(900) {
+    margin-bottom: 20px;
+  }
   &::before {
     position: absolute;
     right: 0;
@@ -95,9 +131,16 @@
     content: '';
     border-radius: 50%;
     background-color: $highlight;
+
+    @include max(900) {
+      display: none;
+    }
   }
 }
 .sec-08__item-text {
+  @include max(900) {
+    margin-bottom: 30px;
+  }
   p {
     font-size: 12px;
     color: #fff;
@@ -111,7 +154,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: auto;
+
+  @include max(900) {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 .sec-08__slogan-title {
   font-size: 18px;
@@ -119,6 +169,12 @@
   margin: 0;
   text-transform: uppercase;
   color: #fff;
+
+  @include max(900) {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .btn-sm.sec-08__btn {
   margin: 0 20px;

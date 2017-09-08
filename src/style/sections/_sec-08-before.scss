@@ -12,9 +12,15 @@
   font-family: $font-bold;
   font-size: 30px;
   margin-bottom: 20px;
+  @include max(680) {
+    font-size: 24px;
+  }
 }
 .sec-08-before__subtitle {
   font-family: $font-semibold;
   font-size: 18px;
   margin-bottom: 50px;
+  @include max(680) {
+    font-size: 16px;
+  }
 }
