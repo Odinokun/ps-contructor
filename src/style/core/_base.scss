@@ -108,6 +108,7 @@ input {
   padding: 3px 10px 5px 10px;
   color: $text;
   border: 1px solid $text;
+  border-radius: 0 !important;
   &::placeholder {
     @include placeholder-color($text);
   }
@@ -150,6 +151,7 @@ svg {
 .btn-sm {
   font-family: $font-bold;
   line-height: 1;
+  cursor: pointer;
   transition: .5s;
   white-space: nowrap;
   text-transform: uppercase;
