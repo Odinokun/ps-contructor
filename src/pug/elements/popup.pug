@@ -1,10 +1,19 @@
 //begin popup
-button.popup-open popup open
+//- button.popup-open popup open
 .popup__layer
-  .popup
-    h3.popup__title Popup title
-    form.popup__form
-      input.popup__input(type="text" placeholder="Ваше имя")
-      input.popup__input(type="text" placeholder="Ваше имя")
-      button.popup__btn Кнопуля
+
+.popup
+  .popup__close
+  h3.popup__title Заявка
+  h4.popup__subtitle на которую мы ответим очень быстро
+  form.popup__form
+    input.popup__input(type="text" placeholder="Ваше имя")
+    input.popup__input(type="text" placeholder="Ваш email")
+    textarea(placeholder="Ваш вопрос")
+    button.popup__btn.btn-lg Кнопуля
+
+.popup-success
+  .popup-success__close
+  h2.popup-success__title Ваше сообщение отправлено!
+  h3.popup-success__subtitle Мы свяжемся с Вами в ближайшее время.
 //end   popup

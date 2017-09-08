@@ -31,7 +31,7 @@
             </div>
           </div>
           <div class="header__btn">
-            <button class="header__btn-link">Оставить заявку</button>
+            <button class="header__btn-link popup-open">Оставить заявку</button>
           </div>
         </div>
       </header>
@@ -80,7 +80,7 @@
           <form class="sec-02__form">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="text" name="phone" placeholder="Телефон">
-            <input class="btn-sm" type="submit" value="начать бесплатно">
+            <input class="btn-sm popup-send" type="submit" value="начать бесплатно">
           </form>
           <h2 class="sec-02__title">А также...</h2>
           <div class="sec-02__banner-wrap">
@@ -94,7 +94,7 @@
             </div>
           </div>
           <h2 class="sec-02__title-lg">Только этим летом</h2>
-          <button class="btn-sm">хочу 7000р.!!!</button>
+          <button class="btn-sm popup-open">хочу 7000р.!!!</button>
         </div>
       </section>
       <!--end   sec-02-->
@@ -208,7 +208,7 @@
           <h2 class="sec-06__title">Мобильную версию сайта
             <span>в подарок</span>
           </h2>
-          <button class="btn-sm sec-06__btn">Получить</button>
+          <button class="btn-sm sec-06__btn popup-open">Получить</button>
         </div>
       </section>
       <!--end   sec-06-->
@@ -303,7 +303,7 @@
           </div>
           <div class="sec-08__slogan">
             <h3 class="sec-08__slogan-title">Начните завоевывать космос интернета прямо сейчас</h3>
-            <button class="btn-sm sec-08__btn">Начать!</button>
+            <button class="btn-sm sec-08__btn popup-open">Начать!</button>
             <div class="sec-08__rocket">
               <img src="assets/img/rocket.png" alt="rocket">
             </div>
@@ -329,7 +329,7 @@
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="text" name="phone" placeholder="Телефон">
             <input type="text" name="adress" placeholder="Адрес сайта">
-            <input class="btn-sm" type="submit" value="Получить аудит">
+            <input class="btn-sm popup-send" type="submit" value="Получить аудит">
           </form>
         </div>
       </section>
@@ -405,7 +405,7 @@
           <form class="sec-11__form">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="text" name="phone" placeholder="Телефон">
-            <input class="btn-sm" type="submit" value="хочу аудит!">
+            <input class="btn-sm popup-send" type="submit" value="хочу аудит!">
           </form>
         </div>
       </section>
@@ -624,6 +624,25 @@
       <!--end   sec-13-->
     </section>
     <!--end   content-->
+    <!--begin popup-->
+    <div class="popup__layer"></div>
+    <div class="popup">
+      <div class="popup__close"></div>
+      <h3 class="popup__title">Заявка</h3>
+      <h4 class="popup__subtitle">на которую мы ответим очень быстро</h4>
+      <form class="popup__form">
+        <input class="popup__input" type="text" placeholder="Ваше имя">
+        <input class="popup__input" type="text" placeholder="Ваш email">
+        <textarea placeholder="Ваш вопрос"></textarea>
+        <button class="popup__btn btn-lg">Кнопуля</button>
+      </form>
+    </div>
+    <div class="popup-success">
+      <div class="popup-success__close"></div>
+      <h2 class="popup-success__title">Ваше сообщение отправлено!</h2>
+      <h3 class="popup-success__subtitle">Мы свяжемся с Вами в ближайшее время.</h3>
+    </div>
+    <!--end   popup-->
     <!--begin footer-->
     <footer class="footer">
       <span>&#169; Copyright 2011-2017 новый взгляд на интернет маркетинг</span>
