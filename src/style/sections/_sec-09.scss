@@ -16,11 +16,17 @@
   font-family: $font-bold;
   font-size: 30px;
   margin-bottom: 20px;
+  @include max(680) {
+    font-size: 24px;
+  }
 }
 .sec-09__subtitle {
   font-family: $font-semibold;
   font-size: 16px;
   margin-bottom: 20px;
+    @include max(680) {
+    font-size: 14px;
+  }
 }
 .sec-09__body {
   padding-left: 320px;
@@ -31,9 +37,17 @@
   display: flex;
 
   align-items: center;
+    @include max(680) {
+      min-height: 0px;
+      padding-left: 0;
+      background-image: none;
+    }
 }
 .sec-09__body-list {
   max-width: 600px;
+    @include max(880) {
+      padding-left: 0;
+    }
   li {
     font-size: 16px;
     position: relative;
@@ -42,6 +56,10 @@
     list-style: none;
     text-transform: uppercase;
     color: $brand;
+    @include max(460) {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
     &::before {
       position: absolute;
       top: 0;
@@ -59,6 +77,9 @@
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto ;
+    @include max(880) {
+      justify-content: space-around;
+    }
   input {
     font-size: 14px;
     width: 100%;
@@ -68,6 +89,16 @@
     outline: none;
 
     @include placeholder-color(#a5a5a5);
+    @include max(880) {
+      width: 30%;
+      max-width: 100%;
+    }
+    @include max(680) {
+      width: 45%;
+    }
+    @include max(460) {
+      width: 90%;
+    }
     &:focus {
       border: 1px solid $highlight;
     }
