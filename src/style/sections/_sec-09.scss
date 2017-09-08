@@ -16,6 +16,7 @@
   font-family: $font-bold;
   font-size: 30px;
   margin-bottom: 20px;
+
   @include max(680) {
     font-size: 24px;
   }
@@ -24,30 +25,32 @@
   font-family: $font-semibold;
   font-size: 16px;
   margin-bottom: 20px;
-    @include max(680) {
+
+  @include max(680) {
     font-size: 14px;
   }
 }
 .sec-09__body {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
   padding-left: 320px;
   background-image: url('../img/sec-09.png');
   background-repeat: no-repeat;
   background-position: 70px 50%;
-  min-height: 400px;
-  display: flex;
 
-  align-items: center;
-    @include max(680) {
-      min-height: 0px;
-      padding-left: 0;
-      background-image: none;
-    }
+  @include max(680) {
+    min-height: 0;
+    padding-left: 0;
+    background-image: none;
+  }
 }
 .sec-09__body-list {
   max-width: 600px;
-    @include max(880) {
-      padding-left: 0;
-    }
+
+  @include max(880) {
+    padding-left: 0;
+  }
   li {
     font-size: 16px;
     position: relative;
@@ -56,9 +59,10 @@
     list-style: none;
     text-transform: uppercase;
     color: $brand;
+
     @include max(460) {
-      margin-bottom: 20px;
       font-size: 14px;
+      margin-bottom: 20px;
     }
     &::before {
       position: absolute;
@@ -72,14 +76,15 @@
   }
 }
 .sec-09__form {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto ;
-    @include max(880) {
-      justify-content: space-around;
-    }
+
+  @include max(880) {
+    justify-content: space-around;
+  }
   input {
     font-size: 14px;
     width: 100%;
