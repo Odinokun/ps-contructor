@@ -16,6 +16,10 @@
   font-size: 30px;
   margin-bottom: 20px;
   color: $brand;
+
+  @include max(680) {
+    font-size: 24px;
+  }
   span {
     color: $highlight;
   }
@@ -25,12 +29,23 @@
   font-size: 16px;
   margin-bottom: 20px;
   color: $brand;
+
+  @include max(680) {
+    font-size: 14px;
+  }
 }
 .sec-12__item {
   position: relative;
   display: flex;
   min-height: 320px;
   padding: 40px 0;
+
+  @include max(900) {
+    flex-wrap: wrap;
+    max-width: 700px;
+    min-height: 0;
+    margin: 0 auto;
+  }
   &:last-child {
     &::after {
       display: none;
@@ -56,6 +71,17 @@
 
 .sec-12__left {
   width: 20%;
+
+  @include max(900) {
+    width: 50%;
+    max-width: 300px;
+  }
+  @include max(540) {
+    width: 100%;
+    max-width: 275px;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
   .sec-12__logo {
     margin-bottom: 20px;
     img {
@@ -91,6 +117,16 @@
 }
 .sec-12__middle {
   width: 20%;
+
+  @include max(900) {
+    width: 50%;
+    max-width: 150px;
+  }
+  @include max(540) {
+    width: 100%;
+    max-width: 275px;
+    margin: 0 auto 40px;
+  }
   a {
     outline: none;
   }
@@ -107,77 +143,38 @@
   flex-direction: column;
   width: 60%;
   padding: 0 20px;
-  .sec-12__text {
-    font-size: 12px;
-    font-style: italic;
-    position: relative;
-    padding: 20px 15px 15px 25px;
-    color: #363636;
-  }
-  .sec-12__text-open,
-  .sec-12__text-close {
-    position: absolute;
-    width: 19px;
-    height: 13px;
-    background-image: url('../img/quotes.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .sec-12__text-open {
-    top: 0;
-    left: 0;
-  }
-  .sec-12__text-close {
-    right: 0;
-    bottom: 0;
-  }
-  .sec-12__signature {
-    font-size: 14px;
-    margin-top: auto;
-    padding-left: 25px;
-    color: $text;
+
+  @include max(900) {
+    width: 100%;
   }
 }
-
-// @media only screen and (max-width: 1000px) {
-//     .sec-12__left,
-//     .sec-12__middle {
-//         display: inline-block;
-//         width: 30%;
-//     }
-//     .sec-12__right {
-//         display: block;
-//         width: 100%;
-//         margin-top: 20px;
-//     }
-//     .sec-12__right {
-//         padding: 0;
-//         .sec-12__signature {
-//             padding-left: 0;
-//         }
-//     }
-// }
-// @media only screen and (max-width: 640px) {
-//     .sec-12__left,
-//     .sec-12__middle {
-//         width: 50%;
-//     }
-// }
-// @media only screen and (max-width: 480px) {
-//     .sec-12__left,
-//     .sec-12__middle {
-//         display: block;
-//         width: 100%;
-//         text-align: center;
-//     }
-//     .sec-12__description {
-//         display: none;
-//     }
-//     .sec-12__middle {
-//         margin-top: 20px;
-//         text-align: left;
-//         img {
-//             max-height: 350px;
-//         }
-//     }
-// }
+.sec-12__text {
+  font-size: 12px;
+  font-style: italic;
+  position: relative;
+  padding: 20px 15px 15px 25px;
+  color: #363636;
+}
+.sec-12__text-open,
+.sec-12__text-close {
+  position: absolute;
+  width: 19px;
+  height: 13px;
+  background-image: url('../img/quotes.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.sec-12__text-open {
+  top: 0;
+  left: 0;
+}
+.sec-12__text-close {
+  right: 0;
+  bottom: 0;
+}
+.sec-12__signature {
+  font-size: 14px;
+  margin-top: auto;
+  padding-left: 25px;
+  color: $text;
+}
